@@ -1,6 +1,6 @@
 /*---------------------------------------
   UCBA Media Musings
-  Desktop Layout – Bold Red Theme (Assignment Compliant)
+  Desktop Layout – Bold Red Theme
 ---------------------------------------*/
 
 /* GOOGLE FONT
@@ -16,28 +16,28 @@
 }
 
 body {
-  font-family: 'Arial', Helvetica, sans-serif; /* assignment: change font-family */
-  height: 100vh; /* stretch to viewport height */
-  background: linear-gradient(to bottom right, #330000, #990000); /* assignment: add gradient */
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  background: linear-gradient(to bottom right, #330000, #990000);
   margin: 0;
-  padding: 0.5rem; /* assignment: add a little space */
+  padding: 0.5rem;
   color: #222;
 }
 
 .wrapper {
-  max-width: 64rem; /* assignment: limit width */
-  margin-left: auto; /* assignment: center wrapper */
+  max-width: 64rem;
+  margin-left: auto;
   margin-right: auto;
-  background-color: #fff; /* assignment: easier to read */
-  border: 3px solid #000; /* assignment: add border */
-  box-shadow: 0 12px 24px rgba(0,0,0,0.7); /* assignment: add shadow */
+  background-color: #fff;
+  border: 3px solid #000;
+  box-shadow: 0 12px 24px rgba(0,0,0,0.7);
   overflow: hidden;
 }
 
 /* IMAGES
 ---------------------------------------*/
 img {
-  max-width: 100%; /* assignment: fit container */
+  max-width: 100%;
   display: block;
   height: auto;
 }
@@ -45,57 +45,53 @@ img {
 /* HEADER
 ---------------------------------------*/
 header {
-  display: flex; /* assignment: flex layout */
-  justify-content: space-between; /* assignment: space between items */
-  align-items: center; /* assignment: vertical center */
-  padding: 1.5rem 2rem; /* assignment: more padding top/bottom */
-  background-color: #000; /* assignment: header bg */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background-color: #000;
   color: #fff;
-  border-bottom: 4px solid #cc0000; /* optional polish */
+  border-bottom: 4px solid #cc0000;
 }
 
 header div.site-name {
-  line-height: 1.1; /* optional styling for site name container */
+  line-height: 1.1;
 }
 
 header h1 {
-  font-family: 'Oswald', sans-serif; /* assignment: distinctive font */
-  font-size: 2.8rem; /* visual hierarchy */
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.8rem;
   margin: 0;
 }
 
 header h1 a {
-  text-decoration: none; /* assignment: remove underline */
-  color: #fff; /* assignment: color match */
-  transition: 0.3s; /* optional hover */
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
 }
 
 header h1 a:hover {
-  color: #ff4d4d; /* subtle hover */
+  color: #ff4d4d;
 }
 
 header h2 {
-  font-size: 1.2rem; /* bigger than normal text but smaller than h1 */
+  font-size: 1.2rem;
   margin: 0.25rem 0 0 0;
   color: #ffb3b3;
 }
 
 /* NAVIGATION
 ---------------------------------------*/
-nav.topnav {
-  /* optional bg/padding already included in header */
-}
-
 nav.topnav ul {
   list-style: none;
   display: flex;
-  gap: 0.5rem; /* spacing between items */
+  gap: 0.5rem;
   margin: 0;
   padding: 0;
 }
 
 nav.topnav li {
-  margin: 0; /* optional spacing adjustments */
+  margin: 0;
 }
 
 nav.topnav a {
@@ -106,7 +102,7 @@ nav.topnav a {
   border-radius: 2rem;
   text-transform: uppercase;
   font-size: 0.85rem;
-  transition: 0.3s; /* assignment: hover effect */
+  transition: 0.3s;
 }
 
 nav.topnav a:hover {
@@ -117,20 +113,20 @@ nav.topnav a:hover {
 /* MAIN HOMEPAGE GRID
 ---------------------------------------*/
 main.homepage {
-  display: grid; /* assignment: CSS Grid */
-  grid-template-columns: 1fr 1fr 1fr 1fr; /* assignment: 4 equal columns */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto auto;
-  gap: 1.5rem; /* room between columns */
+  gap: 1.5rem;
   padding: 1.5rem;
 }
 
 /* BLOG ARTICLE
 ---------------------------------------*/
 article.blog {
-  grid-column: 1 / 4; /* assignment: span 3 columns */
-  grid-row: 1 / 3; /* assignment: span 2 rows */
+  grid-column: 1 / 4;
+  grid-row: 1 / 3;
   background-color: #fdf2f2;
-  padding: 1.5rem; /* padding inside */
+  padding: 1.5rem;
   border: 2px solid #000;
   border-radius: 12px;
   display: flex;
@@ -139,16 +135,16 @@ article.blog {
 }
 
 article.blog h2 {
-  font-size: 2rem; /* increase size */
-  color: #990000; /* optional color */
+  font-size: 2rem;
+  color: #990000;
   margin-bottom: 0.75rem;
-  border-bottom: 3px solid #cc0000; /* assignment */
+  border-bottom: 3px solid #cc0000;
   padding-bottom: 0.25rem;
 }
 
 article.blog p {
-  font-size: 1.05rem; /* readability */
-  line-height: 1.8; /* spacing for easier reading */
+  font-size: 1.05rem;
+  line-height: 1.8;
 }
 
 /* ASIDES
@@ -156,55 +152,55 @@ article.blog p {
 main.homepage aside {
   background-color: #111;
   color: #fff;
-  padding: 1rem; /* assignment: style area */
+  padding: 1rem;
   border-radius: 12px;
   border: 2px solid #cc0000;
 }
 
 aside.recent {
-  grid-column: 4 / 5; /* assignment: column placement */
-  grid-row: 1 / 2; /* assignment: top aside */
+  grid-column: 4 / 5;
+  grid-row: 1 / 2;
 }
 
 aside.links {
-  grid-column: 4 / 5; /* assignment: column placement */
-  grid-row: 2 / 3; /* assignment: below recent */
+  grid-column: 4 / 5;
+  grid-row: 2 / 3;
 }
 
 aside h3 {
   font-size: 1.1rem;
-  text-transform: uppercase; /* optional */
+  text-transform: uppercase;
   margin-bottom: 0.5rem;
   border-bottom: 2px solid #cc0000;
   padding-bottom: 0.25rem;
 }
 
 aside ul {
-  margin-left: 1rem; /* assignment: move bullets inside */
+  margin-left: 1rem;
   padding-left: 0;
 }
 
 aside li {
-  margin-bottom: 0.5rem; /* assignment: spacing */
+  margin-bottom: 0.5rem;
 }
 
 aside li a {
   color: #fff;
-  text-decoration: none; /* assignment */
+  text-decoration: none;
   transition: 0.3s;
 }
 
 aside li a:hover {
-  color: #ff4d4d; /* assignment: hover effect */
+  color: #ff4d4d;
 }
 
 /* CAMPUS GRID
 ---------------------------------------*/
 section.campus {
-  grid-column: 1 / 5; /* assignment: span all homepage columns */
-  display: grid; /* assignment: grid container */
-  grid-template-columns: repeat(6, 1fr); /* assignment: 6 equal columns */
-  gap: 0.75rem; /* optional spacing */
+  grid-column: 1 / 5;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0.75rem;
 }
 
 section.campus section {
@@ -212,7 +208,6 @@ section.campus section {
   border: 2px solid #990000;
   border-radius: 12px;
   text-align: center;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
   overflow: hidden;
 }
 
@@ -223,11 +218,11 @@ section.campus h3 {
 }
 
 section.campus figure {
-  margin: 0; /* control spacing around image+caption */
+  margin: 0;
 }
 
 section.campus img {
-  width: 100%; /* fit container */
+  width: 100%;
   height: 8rem;
   object-fit: cover;
   border-bottom: 2px solid #cc0000;
@@ -241,7 +236,7 @@ section.campus figcaption {
 /* FOOTER
 ---------------------------------------*/
 footer {
-  background-color: #000; /* same as header */
+  background-color: #000;
   color: #fff;
   padding: 1rem;
   border-top: 4px solid #cc0000;
@@ -249,7 +244,7 @@ footer {
 }
 
 footer small {
-  font-size: 0.75rem; /* assignment */
+  font-size: 0.75rem;
   line-height: 1.5;
 }
 
@@ -260,4 +255,164 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+/* =======================================
+   TABLET LAYOUT
+======================================= */
+@media (max-width: 768px) {
+
+  .wrapper {
+    width: 95%;
+    max-width: none;
+  }
+
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav.topnav {
+    background-color: #111;
+    margin-top: 1rem;
+    padding: 0.5rem 0;
+  }
+
+  main.homepage {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  article.blog {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+  }
+
+  article.blog h2 {
+    font-size: 2.2rem;
+  }
+
+  article.blog p {
+    font-size: 1.15rem;
+    line-height: 1.9;
+  }
+
+  main.homepage aside.recent {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  main.homepage aside.links {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+
+  main.homepage aside h3 {
+    font-size: 1.2rem;
+  }
+
+  main.homepage aside li {
+    margin-bottom: 0.75rem;
+  }
+
+  main.homepage aside a {
+    font-size: 1rem;
+    padding: 0.25rem 0;
+    display: inline-block;
+  }
+
+  section.campus {
+    grid-column: 1 / 3;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  section.campus h3 {
+    font-size: 1rem;
+  }
+
+  section.campus figure {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  section.campus figcaption {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+}
+
+/* =======================================
+   PHONE LAYOUT
+======================================= */
+@media (max-width: 480px) {
+
+  .wrapper {
+    width: 100%;
+    margin: 0;
+  }
+
+  header {
+    padding: 1rem;
+    margin: 0;
+  }
+
+  nav.topnav {
+    width: 98%;
+    margin-bottom: 0.5em;
+  }
+
+  nav.topnav ul {
+    flex-direction: column;
+  }
+
+  nav.topnav li {
+    border-bottom: 1px solid #444;
+  }
+
+  nav.topnav li:last-of-type {
+    border: none;
+  }
+
+  main.homepage {
+    grid-template-columns: 1fr;
+  }
+
+  article.blog {
+    grid-column: auto;
+  }
+
+  article.blog h2 {
+    font-size: 1.8rem;
+  }
+
+  article.blog p {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  main.homepage aside {
+    display: none;
+  }
+
+  section.campus {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  section.campus h3 {
+    font-size: 1.1rem;
+  }
+
+  section.campus figure {
+    grid-template-columns: 1fr 1.5fr;
+    background-color: #fff5f5;
+    padding: 0.75rem;
+    border-radius: 10px;
+  }
+
+  section.campus figcaption {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
 }
